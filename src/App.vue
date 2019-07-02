@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import firebase from './assets/firebase';
+import dataFirebase from './assets/firebase';
 
 export default {
   name: 'App',
@@ -17,11 +17,11 @@ export default {
   //   Menu,
   // },
   methods: {
-    firebase,
+    dataFirebase,
   },
 };
 
-firebase();
+dataFirebase();
 
 </script>
 

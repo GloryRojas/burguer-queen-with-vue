@@ -1,4 +1,17 @@
 /* eslint-disable linebreak-style */
-const firebase = () => console.log('Hola desde firebase');
+import firebase from '../firestore';
 
-export default firebase;
+const db = firebase.firestore();
+
+const dataFirebase = () => {
+  db.collection('menu').get()
+    .then((res) => {
+      const products = [];
+      res.forEach((doc) => {
+        products.push(doc.data());
+      });
+      console.log(products);
+    });
+};
+
+export default dataFirebase;

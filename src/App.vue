@@ -8,6 +8,23 @@
   </div>
 </template>
 
+<script>
+import firebase from './assets/firebase';
+
+export default {
+  name: 'App',
+  // components: {
+  //   Menu,
+  // },
+  methods: {
+    firebase,
+  },
+};
+
+firebase();
+
+</script>
+
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
